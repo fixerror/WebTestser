@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory >
+  		<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL82Dialect</property>
+  		<property name="hibernate.show.sql">false</property>
+  
+        <mapping class="ua.radchenko.jee.entities.Answer"/>
+        <mapping class="ua.radchenko.jee.entities.Question"/>
+        <mapping class="ua.radchenko.jee.entities.Result"/>
+        <mapping class="ua.radchenko.jee.entities.Role"/>
+        <mapping class="ua.radchenko.jee.entities.Test"/>
+        <mapping class="ua.radchenko.jee.entities.Account"/>
+        <mapping class="ua.radchenko.jee.entities.UserRegistration"/>
+        <mapping class="ua.radchenko.jee.entities.AccountRole"/>
+    </session-factory>
+</hibernate-configuration>
